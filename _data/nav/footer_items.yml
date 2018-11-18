@@ -1,0 +1,14 @@
+de:
+  - name: "e-Mail"
+    type: "email"
+    url: "mailto:finnsky@mail.ru"
+
+  - name: "WhatsApp"
+    type: "phone"
+    number: "+7 (122) 353646"
+    url: "tel:7122353646"
+
+  - name: "Viber"
+    type: "phone"
+    number: "+7 (122) 346"
+    url: "tel:7122346"

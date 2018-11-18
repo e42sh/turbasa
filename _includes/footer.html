@@ -1,0 +1,7 @@
+<footer class="footer position-fixed d-sm-none">
+  <div class="container-fluid text-right">
+    {% for item in site.data.nav.footer_items[page.language] %}
+    <a href="{{ item.url }}"><img data-src="holder.js/45x45?text={{ item.mail }}" alt="{{ item.name }}"></a>
+    {% endfor %}
+  </div>
+</footer>

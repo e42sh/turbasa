@@ -1,0 +1,33 @@
+<header class="fixed-top bg-white">
+  <nav
+    class="navbar navbar-expand-sm navbar-dark bg-dark d-none d-sm-flex shadow p-2 mb-1 bg-white">
+    <div class="logo navbar-brand position-absolute shadow"><a class="nav-link text-white" href="/{{ language }}/">FT</a></div>
+    <ul class="navbar-nav ml-auto">
+      {% for item in site.data.nav.top_items[page.language] %}
+      <li class="nav-item"><a target="_blank" href="{{ item.url }}" class="nav-link">{{item.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <nav id="nav-main" class="navbar navbar-expand-sm navbar-light bg-transparent shadow">
+    <button class="navbar-toggler mr-2" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#" class="logo navbar-brand d-sm-none mr-auto">FT</a>
+    <div class="d-sm-none">
+      {% for item in site.data.nav.top_items[page.language] %}
+      <a href="{{ item.url }}"><img data-src="holder.js/25x25?text={{ item.name}}" width="25" height="25"
+                       class="d-inline-block align-top" alt="{{ item.name }}"></a>
+      {% endfor %}
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        {% for item in site.data.nav.main_items[page.language] %}
+        <li class="nav-item {% if page.url == item.permalink %}active{% endif %}"><a href="{{ item.permalink }}" class="nav-link">{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </nav>
+</header>

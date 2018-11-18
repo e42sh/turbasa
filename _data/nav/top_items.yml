@@ -1,0 +1,17 @@
+de:
+#  - name: "Gremyachinsk direkt ums Eck 8"
+#    url: "https://goo.gl/maps/7ZcrsBfe9N62"
+
+  - name: "finnsky@mail.ru"
+    type: "email"
+    url: "mailto:finnsky@mail.ru"
+
+  - name: "WhatsApp"
+    type: "mail"
+    number: "+7 (122) 353646"
+    url: "tel:7122353646"
+
+  - name: "Viber"
+    type: "phone"
+    number: "+7 (122) 346"
+    url: "tel:7122346"
